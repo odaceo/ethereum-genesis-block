@@ -28,11 +28,10 @@ func check(e error) {
 }
 
 func main() {
-
-	genesisBlock := core.DefaultGenesisBlock()
-	bytes, _ := genesisBlock.MarshalJSON()
-	err := ioutil.WriteFile("./mainnet.json", bytes, 0644)
-	check(err)
+    genesisBlock := core.DefaultGenesisBlock()
+    bytes, _ := genesisBlock.MarshalJSON()
+    err := ioutil.WriteFile("./mainnet.json", bytes, 0644)
+    check(err)
 }
 ```
 
